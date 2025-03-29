@@ -14,7 +14,7 @@ const Navigation = ({ size, handleFilterChange, rotateBasket }) => {
         <input
           type="text"
           onChange={(e) => handleFilterChange(e.target.value)}
-          className="w-full px-4 py-2 text-black rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          className="w-full px-4 py-2 text-white rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-400"
           placeholder="Search for pizzas..."
         />
         <Search className="absolute right-3 top-2 text-gray-500" size={20} />
