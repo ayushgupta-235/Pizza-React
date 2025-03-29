@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-const Cart = ({ cart, addToCart, removeWholeItem, removeOneItem }) => {
-    let cartArray = Array.from(cart.values());
-    let total = cartArray.reduce((sum, pizza) => sum + pizza.price * pizza.quantity, 0);
-  
-    return (
-=======
 import { useCallback, useState } from "react";
 
 const Cart = ({ cart, addToCart, removeWholeItem, removeOneItem }) => {
@@ -17,7 +10,6 @@ const Cart = ({ cart, addToCart, removeWholeItem, removeOneItem }) => {
      },[])
     return (
       <>
->>>>>>> 788a21a (minor changes)
       <div className="max-w-4xl mx-auto p-6 bg-gray-100 shadow-lg rounded-lg">
         <h1 className="text-2xl font-bold mb-4">Your Pizza Cart</h1>
         {cartArray.map((pizza) => (
@@ -52,17 +44,11 @@ const Cart = ({ cart, addToCart, removeWholeItem, removeOneItem }) => {
         ))}
         <div className="text-right mt-6">
           <h3 className="text-xl font-bold">Total: ${total.toFixed(2)}</h3>
-<<<<<<< HEAD
-          <button className="mt-2 px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">
-=======
           <button onClick={onClickHandler} className="mt-2 px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">
->>>>>>> 788a21a (minor changes)
             Order Now
           </button>
         </div>
       </div>
-<<<<<<< HEAD
-=======
       {show && (
         <div className="p-4">
                   <div class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md" role="alert">
@@ -75,7 +61,6 @@ const Cart = ({ cart, addToCart, removeWholeItem, removeOneItem }) => {
         </div>
       )}
       </>
->>>>>>> 788a21a (minor changes)
     );
   };
   
